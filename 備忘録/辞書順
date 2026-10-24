@@ -1,0 +1,4 @@
+# chr の（見える）最小値
+print(chr(33))
+# chr の最大値
+print(chr(0x10ffff))

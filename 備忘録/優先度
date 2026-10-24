@@ -1,0 +1,24 @@
+演算子の優先度
+高
+↓
+低
+
+(), [], {k, v}, {}
+x[i], x[i:j], x(), x.attr
+await x
+**
++x, -x, ~x
+*, @, /, //, %
++, -
+<<, >>
+&
+^
+|
+in, not in, is, is not, <, <=, >, >=. !=. ==
+not x
+and
+or
+if -- else
+lambda
+
+n << 1 + 1 なら n << (1 + 1) と同じ

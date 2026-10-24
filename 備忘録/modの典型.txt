@@ -1,0 +1,36 @@
+""" @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ """
+    mod m の変形
+
+    ax = 0 (mod m)
+    ならば
+    g = gcd(a,m)
+    x = 0 (mod m // g)
+
+    m = 12
+    a = 9
+    oooxxxoooxxx
+    oooxxxoooxxx
+    oooxxxoooxxx
+    xxxoooxxxooo
+    xxxoooxxxooo
+    xxxoooxxxooo
+    ax = 0 (mod m)
+
+    これを
+
+    oxox
+    oxox
+    oxox
+    xoxo
+    xoxo
+    xoxo
+    a//g*x = 0 (mod m//g)
+
+    こうして
+
+    oxox
+    xoxo
+    x = 0 (mod m//g)
+
+    こうしても構わない
+""" @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ """
