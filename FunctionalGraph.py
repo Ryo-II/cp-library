@@ -1,6 +1,14 @@
 class FunctionalGraph:
     def __init__(self, g: list[int]):
-        """g: iからg[i]への辺(0<=i<N)"""
+        """
+        g: iからg[i]への辺(0<=i<N)
+        rev: 逆辺の隣接リスト
+        cycles: 各サイクルの頂点リストのリスト cycles[*][i]->cycles[*][i+1] の辺がある
+        cycle_pos: cycles[*]でのインデックス サイクル外ならば-1
+        cycle_id: root[u]が所属するサイクルのid cyclesでのインデックス
+        root: gを0回以上たどったとき、最初に到達するサイクル内の頂点
+        order: 葉->根 の順番 サイクル内の頂点は含まない
+        """
         self.g = g
         n = self.n = len(g)
         rev = self.rev = [[] for _ in range(n)]
