@@ -8,7 +8,7 @@ for bit1 in range(1 << n):
         if bit1 & bit2 == bit2:
             ans1 += 1
 
-# 推奨
+# 推奨 O(3^n)
 ans2 = 0
 for bit1 in range(1 << n):
     bit2 = bit1
